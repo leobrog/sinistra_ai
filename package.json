@@ -4,14 +4,15 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+    "@types/bun": "latest",
+    "@types/node": "^20.14.2",
+    "typescript": "^5.0.0"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
-    "discord.js": "^14.22.1"
+    "discord.js": "^14.22.1",
+    "langchain": "^0.2.5",
+    "@langchain/google-genai": "^0.0.19"
   },
   "scripts": {
     "start": "bun run index.ts"
