@@ -1,5 +1,7 @@
 # Sinistra AI
 
+![My Awesome Screenshot](sinistra_avatar.png)
+
 Sinistra is a Discord bot for Elite Dangerous, created to serve Communism Interstellar and its allies.
 
 ## Setup
