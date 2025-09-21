@@ -1,0 +1,19 @@
+{
+  "name": "sinistra_ai",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "discord.js": "^14.22.1"
+  },
+  "scripts": {
+    "start": "bun run index.ts"
+  }
+}
