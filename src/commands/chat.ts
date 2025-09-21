@@ -7,6 +7,8 @@ import { smartChunk } from '../utils/smart-chunk';
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY as string);
 
+const genAIModel = process.env.GEMINI_MODEL as string
+
 export const data = new SlashCommandBuilder()
     .setName('chat')
     .setDescription('Chat with Sinistra')
@@ -40,7 +42,7 @@ export async function execute(interaction: ChatInputCommandInteraction) {
         return interaction.reply({ content: 'You must provide a message.', ephemeral: true });
     }
 
-    await interaction.deferReply();
+    await interaction.deferReply({ flags: 'Ephemeral' });
 
     const systemPrompt = await fs.readFile('./prompt/system-prompt.txt', 'utf-8');
 
